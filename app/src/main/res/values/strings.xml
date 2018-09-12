@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Marvel Wall Internship</string>
+    <string name="title_test">nesciunt quas odio</string>
+    <string name="body_test">et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut</string>
+    <string name="noConnection">Please check your internet connection, then refresh page</string>
+</resources>
