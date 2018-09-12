@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Helper method to start fetching data
-    public void fetchData() {
+    private void fetchData() {
         mPostsViewModel = ViewModelProviders.of(this).get(PostsViewModel.class);
         mPostsViewModel.getPostsObservable().observe(this, new Observer<List<Post>>() {
             @Override
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Helper method to setup the recyclerView, adapter then attach them
-    public void setupRecyclerView() {
+    private void setupRecyclerView() {
         recyclerView = findViewById(R.id.data_recycler_view);
         layoutManager = new LinearLayoutManager(MainActivity.this);
         recyclerView.setLayoutManager(layoutManager);

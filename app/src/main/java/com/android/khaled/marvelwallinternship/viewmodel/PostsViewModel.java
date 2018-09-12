@@ -10,12 +10,11 @@ import java.util.List;
 
 public class PostsViewModel extends ViewModel {
 
-    private PostRepository mPostRepository;
     private final LiveData<List<Post>> postsObservable;
 
     public PostsViewModel() {
         super();
-        mPostRepository = new PostRepository();
+        PostRepository mPostRepository = new PostRepository();
         postsObservable = mPostRepository.getAllPosts();
     }
 

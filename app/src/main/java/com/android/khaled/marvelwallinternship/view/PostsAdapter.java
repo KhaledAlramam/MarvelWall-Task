@@ -18,8 +18,8 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsViewHol
     class PostsViewHolder extends RecyclerView.ViewHolder {
 
         public final View mView;
-        TextView titleTextView;
-        TextView bodyTextView;
+        final TextView titleTextView;
+        final TextView bodyTextView;
 
         PostsViewHolder(View itemView) {
             super(itemView);

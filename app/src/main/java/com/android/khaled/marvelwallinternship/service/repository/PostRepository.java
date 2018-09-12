@@ -13,12 +13,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class PostRepository {
-    private GetDataService getDataService;
 
     public LiveData<List<Post>> getAllPosts() {
         final MutableLiveData<List<Post>> data = new MutableLiveData<>();
 
-        getDataService = RetrofitClientInstance.getRetrofitInstance()
+        GetDataService getDataService = RetrofitClientInstance.getRetrofitInstance()
                 .create(GetDataService.class);
         Call<List<Post>> call = getDataService.getAllPosts();
         call.enqueue(new Callback<List<Post>>() {
